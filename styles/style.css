@@ -1,0 +1,127 @@
+:root {
+  --bg-blue: hsl(217, 54%, 11%);
+  --card-blue: hsl(216, 50%, 16%);
+  --line-blue: hsl(215, 32%, 27%);
+  --soft-blue: hsl(215, 51%, 70%);
+  --cyan: hsl(178, 100%, 50%);
+}
+
+html {
+  font-family: "Outfit", sans-serif;
+}
+
+body {
+  background-color: var(--bg-blue);
+}
+
+h2 {
+  color: white;
+}
+h2:hover {
+  color: var(--cyan);
+}
+p {
+  color: var(--soft-blue);
+}
+
+.eth p {
+  color: cyan;
+}
+
+.source__bold {
+  color: white;
+}
+
+.card {
+  background-color: var(--card-blue);
+  display: flex;
+  flex-direction: column;
+  padding: 1.5rem;
+  border-radius: 12px;
+  max-width: 288px;
+  margin: 30px auto 20px auto;
+}
+.image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image:hover {
+  filter: invert(1);
+}
+
+.image img {
+  width: 100%;
+  border-radius: 12px;
+}
+
+.text p {
+  font-size: 18px;
+  font-weight: 300;
+}
+
+.data {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: stretch;
+  border-bottom: 1px solid var(--line-blue);
+}
+
+.eth {
+  display: flex;
+  align-items: center;
+}
+.eth img {
+  height: 18px;
+  margin-right: 6px;
+}
+
+.time {
+  display: flex;
+  align-items: center;
+}
+
+.time img {
+  height: 18px;
+  margin-right: 6px;
+}
+
+.source {
+  display: flex;
+  align-items: center;
+}
+
+.source img {
+  height: 35px;
+  border: 1px solid white;
+  border-radius: 50%;
+  margin-right: 12px;
+}
+
+.source__thin {
+  padding-right: 4px;
+}
+
+.source__bold:hover {
+  color: var(--cyan);
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  color: white;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media screen {
+  body {
+    justify-content: center;
+  }
+  .card {
+    margin: 10% auto 30px auto;
+  }
+}
